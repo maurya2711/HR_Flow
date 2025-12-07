@@ -1,0 +1,49 @@
+@import './styles/variables.css';
+@import '@xyflow/react/dist/style.css';
+
+/* Override React Flow styles for premium feel */
+.react-flow__node {
+  border: none;
+  border-radius: var(--radius-lg);
+  box-shadow: var(--shadow-md);
+}
+
+.react-flow__handle {
+  width: 10px;
+  height: 10px;
+  background: var(--color-surface-0);
+  border: 2px solid var(--color-text-muted);
+  transition: all 0.2s;
+}
+
+.react-flow__handle:hover {
+  background: var(--color-primary);
+  border-color: var(--color-primary);
+  transform: scale(1.2);
+}
+
+.react-flow__edge-path {
+  stroke: var(--color-text-muted);
+  stroke-width: 2;
+}
+
+.react-flow__controls {
+  box-shadow: var(--shadow-md);
+  border: none;
+  border-radius: var(--radius-md);
+  overflow: hidden;
+}
+
+.react-flow__controls-button {
+  border: none;
+  background: var(--color-surface-0);
+  border-bottom: 1px solid var(--color-surface-200);
+}
+
+.react-flow__controls-button:last-child {
+  border-bottom: none;
+}
+
+.react-flow__controls-button:hover {
+  background: var(--color-surface-100);
+}
